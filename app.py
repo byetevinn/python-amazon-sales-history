@@ -25,8 +25,7 @@ df_books
 fig1 = px.bar(df_books["year of publication"].value_counts())
 fig2 = px.histogram(df_books["book price"])
 
-# Criando colunas
+# Criando e renderizando colunas
 col1, col2 = st.columns(2)
-
 col1.plotly_chart(fig1)
 col2.plotly_chart(fig2)
